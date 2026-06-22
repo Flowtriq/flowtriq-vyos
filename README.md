@@ -1,10 +1,34 @@
-# Flowtriq for VyOS
+<h1 align="center">Flowtriq for VyOS</h1>
 
-Real-time DDoS detection for VyOS routers. Two integration paths: install ftagent directly on VyOS (it's Debian-based, so it runs natively) or export NetFlow/sFlow to a remote ftagent host.
+<h3 align="center">DDoS detection for your VyOS router. Direct install or NetFlow export.</h3>
 
-Works with [Flowtriq's agent](https://github.com/Flowtriq/ftagent), which analyzes traffic patterns and reports to the [Flowtriq dashboard](https://flowtriq.com).
+<p align="center">
+  <a href="#quick-start">Quick Start</a> &bull;
+  <a href="#direct-install">Direct Install</a> &bull;
+  <a href="#netflow-export">NetFlow Export</a> &bull;
+  <a href="#vyos-configuration-reference">Config Reference</a> &bull;
+  <a href="#troubleshooting">Troubleshooting</a> &bull;
+  <a href="https://discord.gg/SsTWMYuyGG">Discord</a>
+</p>
 
-## Two integration paths
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License"></a>
+  <a href="https://flowtriq.com"><img src="https://img.shields.io/badge/flowtriq-dashboard-00d4aa?style=flat-square" alt="Dashboard"></a>
+  <a href="https://pypi.org/project/ftagent/"><img src="https://img.shields.io/pypi/v/ftagent?style=flat-square&label=ftagent&color=3776AB" alt="ftagent"></a>
+  <a href="https://discord.gg/SsTWMYuyGG"><img src="https://img.shields.io/badge/discord-join-5865F2?style=flat-square" alt="Discord"></a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Flowtriq/flowtriq-vyos/main/.github/architecture.svg" alt="Architecture" width="680">
+</p>
+
+---
+
+VyOS is unique among router platforms because it's built on Debian Linux. This means you can either run ftagent directly on the router or use the traditional flow export approach. Both paths connect to the [Flowtriq dashboard](https://flowtriq.com) for real-time attack detection, alerting, and automated mitigation.
+
+## Two Integration Paths
 
 VyOS is unique among router platforms because it's built on Debian Linux. This means you can either run ftagent directly on the router or use the traditional flow export approach.
 
