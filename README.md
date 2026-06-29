@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="#quick-start">Quick Start</a> &bull;
-  <a href="#direct-install">Direct Install</a> &bull;
-  <a href="#netflow-export">NetFlow Export</a> &bull;
+  <a href="#two-integration-paths">Direct Install</a> &bull;
+  <a href="#manual-setup-netflow-export">NetFlow Export</a> &bull;
   <a href="#vyos-configuration-reference">Config Reference</a> &bull;
   <a href="#troubleshooting">Troubleshooting</a> &bull;
   <a href="https://discord.gg/SsTWMYuyGG">Discord</a>
@@ -16,6 +16,10 @@
   <a href="https://flowtriq.com"><img src="https://img.shields.io/badge/flowtriq-dashboard-00d4aa?style=flat-square" alt="Dashboard"></a>
   <a href="https://pypi.org/project/ftagent/"><img src="https://img.shields.io/pypi/v/ftagent?style=flat-square&label=ftagent&color=3776AB" alt="ftagent"></a>
   <a href="https://discord.gg/SsTWMYuyGG"><img src="https://img.shields.io/badge/discord-join-5865F2?style=flat-square" alt="Discord"></a>
+</p>
+
+<p align="center">
+  <b><a href="https://flowtriq.com/integrations/vyos">Integration Guide</a></b> | <b><a href="https://flowtriq.com/docs">Documentation</a></b> | <b><a href="https://flowtriq.com/signup">Sign Up</a></b>
 </p>
 
 ---
@@ -29,8 +33,6 @@
 VyOS is unique among router platforms because it's built on Debian Linux. This means you can either run ftagent directly on the router or use the traditional flow export approach. Both paths connect to the [Flowtriq dashboard](https://flowtriq.com) for real-time attack detection, alerting, and automated mitigation.
 
 ## Two Integration Paths
-
-VyOS is unique among router platforms because it's built on Debian Linux. This means you can either run ftagent directly on the router or use the traditional flow export approach.
 
 | | Direct Install | NetFlow Export |
 |---|---|---|
@@ -424,6 +426,14 @@ For NetFlow export: VyOS configuration survives upgrades as long as you use `sav
 - [Discord](https://discord.gg/SsTWMYuyGG)
 - [VyOS Documentation](https://docs.vyos.io/en/latest/configuration/system/flow-accounting.html)
 
+## Get Started
+
+Start your free 14-day trial at [flowtriq.com/signup](https://flowtriq.com/signup).
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+Built by [Flowtriq](https://flowtriq.com) - Real-time DDoS detection and mitigation.
